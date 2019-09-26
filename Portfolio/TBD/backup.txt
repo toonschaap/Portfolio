@@ -1,0 +1,27 @@
+<div class="w3-container" style="margin-top:80px" id="Story">
+  <h1 class="w3-jumbo"><b>Stories/Concepts</b></h1>
+  <h1 class="w3-xxxlarge w3-text-grey"><b></b></h1>
+  <hr style="width:250px;border:5px solid grey" class="w3-round">
+</div>
+
+
+<div class="w3-container" id="Freelancers" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-grey"><b>Freelancers</b></h1>
+  <hr style="width:50px;border:5px solid grey" class="w3-round">
+  <p>Freelancers is a concept I've been working on for around 2 years. It is a game I plan to make in the future if everything goes right.</p>
+  <p>Freelancers is an open world game set in the year 2122. Humanity has come in contact with alien species and have built a city to represent the alliance the species have made together. However, this city has become the flagship of a crime syndicate, a poison to the city. It is your goal to work together with a small team of outcasts to stop this syndicate and restore the city.
+  <br></br></p>
+
+</div>
+
+
+<!-- Services -->
+<div class="w3-container" id="Project1" style="margin-top:75px">
+ <h1 class="w3-xxxlarge w3-text-grey"><b>Intergalactic Bubbleshooting Fish</b></h1>
+ <hr style="width:50px;border:5px solid grey" class="w3-round">
+ <p>The first real proper project I've done. Made with 2 developers and three artists</p>
+ <a href="https://github.com/toonschaap/IntergalacticBubbleShootingFish">Github</a>
+ <p>We were originally told that we had 3 weeks to finish the project, because of that we spent most of the time <span id="dots">...</span><span id="more"> on the controls and enemies. When the 3 weeks were done we heard we had an extra 3 weeks. In those 3 weeks we spent more time on the levels. We didn't really work with sprints, rather we decided in the first week what we wanted done in these three week. Of course when we heard we had another 3 weeks to finish the project, we focused on other things. So indirectly we did ended working with sprints. Looking back it's funny to see how different my way of working was compared to now. Not using sprints, leaving in empty functions and using mostly public variables. Still though, I really like this project.</span></p>
+ <button onclick="myFunction()" id="myBtn">Read more</button><br> </br>
+ <img src="Images/screenshot.png" style="width:50%" onclick="onClick(this)" alt="Image">
+</div>

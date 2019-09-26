@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+#more {display: none;}
+</style>
+<script src="script.js" charset="utf-8"></script>
+<body>
+<body bgcolor="aliceblue">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h2 class="w3-padding-64"><b>Toon Schaap</b></h2>
+  </div>
+  <div class="w3-bar-block">
+  <!--  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> -->
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Main Projects</a>
+    <a href="#Project3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-Pale</h6></a>
+    <a href="#Project6" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-Dialogue System</h6></a>
+    <a href="#Project5" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-Lightsource</h6></a>
+    <a href="#Project1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-Intergalactic Bubbleshooting Fish</h6></a>
+    <a href="#Project2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-10 second Windwaker</h6></a>
+    <a href="#Project4" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-Anansi</h6></a>
+    <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Minor Projects</a>-->
+    <!--<a href="#Project5" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-Endless Runner</h6></a>-->
+    <!--<a href="#Story" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Writing/Concepts</a>-->
+    <!--<a href="#Freelancers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-Project Freelancers</h6></a>-->
+    <a href="#Personal" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personal</a>
+    <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-About Me</h6></a>
+    <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h6>-Contact</h6></a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-grey w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Toon Schaap</span><br></br>
+
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Projects</b></h1>
+    <h1 class="w3-xxxlarge w3-text-grey"><b>Main projects</b></h1>
+    <hr style="width:250px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <!-- Header -->
+  <div class="w3-row-padding">
+      <div class="w3-half">
+        <h4>These are the larger projects I have made.</h4>
+      </div>
+
+      <div class="w3-container" id="Project3" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-grey"><b>Pale</b></h1>
+        <hr style="width:50px;border:5px solid grey" class="w3-round">
+        <p>A follow up project to the 10 second Windwaker project. The point was to make 10 seconds of a game we made up.</p>
+        <a href="https://github.com/MLGC00KIE/VerticalSlice2-2019">Github</a><br></br>
+        <img src="Images/Pale.PNG" style="width:50%" onclick="onClick(this)" alt="Image">
+      </div>
+
+
+       <div class="w3-container" id="Project6" style="margin-top:75px">
+         <h1 class="w3-xxxlarge w3-text-grey"><b>Dialogue System</b></h1>
+         <hr style="width:50px;border:5px solid grey" class="w3-round">
+         <p>Short demo featuring an npc with some short dialogue.</p>
+         <a href="https://github.com/toonschaap/ProefOpdracht">Github</a> <br> </br>
+         <a href="DialogueSystem/index.html">Link to demo</a> <br> </br>
+         <img src="Images/Dialogue.gif" style="width:50%" onclick="onClick(this)" alt="Image"><br> </br>
+         <p>I've been working on a concept for a project, and one of the things I wanted was a dialogue system. It was fairly difficult getting it just right. Mainly due to having to import a file in order to get the dialogue. Originally I was planning on using a XML file for the dialogue, but a simple TXT file proved to be easier to understand and use. There's still some polishing to be done. I still want to fix some minor bugs going on. But overall I'm very happy with what I got.
+         </p>
+       </div>
+
+       <div class="w3-container" id="Project5" style="margin-top:75px">
+         <h1 class="w3-xxxlarge w3-text-grey"><b>Lightsource</b></h1>
+         <hr style="width:50px;border:5px solid grey" class="w3-round">
+         <p>Short demo which uses audio to create light. Made with 2 developers</p>
+         <a href="https://github.com/toonschaap/InputOutput">Github</a> <br> </br>
+         <a href="LightSource/index.html">Link to demo</a> <pr>DOES NOT WORK PROPERLY ON CHROME, FIREFOX RECOMMENDED</p>
+         <div class="w3-content w3-display-container">
+           <img class="mySlides2" src="Images/Lightsource/InputOutput.gif" style="width:100%">
+           <img class="mySlides2" src="Images/Lightsource/LevelIdea" style="width:100%">
+
+         <button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
+  <p>The most difficult part about Lightsource was that we weren't allowed to use Unity. Because of that we jumped from engine to engine for the two weeks. We unfortunately didn't put in enough research about every engine, so because of that we ended up experimenting with engines that couldn't get us what we wanted. After asking around we decided to use javascript, which we both found a pretty tricky language. But after a lot of guidance and help we managed to get what we wanted. And because of it I've learned a lot more about javascript.
+  </p>
+         <script>
+  let  slideIndex1;
+  showDivs1(slideIndex1);
+
+  function plusDivs1(n) {
+   showDivs1(slideIndex1 += n);
+  }
+
+  function showDivs1(n) {
+   let  i;
+   let x = document.getElementsByClassName("mySlides2");
+   if (n > x.length) {slideIndex1 = 1}
+   if (n < 1) {slideIndex1 = x.length}
+   for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+   }
+   x[slideIndex1-1].style.display = "block";
+  }
+  </script>
+       </div>
+
+      <!-- Services -->
+     <div class="w3-container" id="Project1" style="margin-top:75px">
+       <h1 class="w3-xxxlarge w3-text-grey"><b>Intergalactic Bubbleshooting Fish</b></h1>
+       <hr style="width:50px;border:5px solid grey" class="w3-round">
+       <p>The first real proper project I've done. Made with 2 developers and three artists</p>
+       <a href="https://github.com/toonschaap/IntergalacticBubbleShootingFish">Github</a><br></br>
+       <div class="w3-content w3-display-container">
+         <img class="mySlides" src="Images/IGBS/ibsh1.gif" style="width:100%">
+         <img class="mySlides" src="Images/IGBS/ibsh3.gif" style="width:100%">
+         <img class="mySlides" src="Images/IGBS/ibsh4.gif" style="width:100%">
+
+
+       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<p>We were originally told that we had 3 weeks to finish the project, because of that we spent most of the time on the controls and enemies. When the 3 weeks were done we heard we had an extra 3 weeks. In those 3 weeks we spent more time on the levels. We didn't really work with sprints, rather we decided in the first week what we wanted done in these three week. Of course when we heard we had another 3 weeks to finish the project, we focused on other things. So indirectly we did ended working with sprints. Looking back it's funny to see how different my way of working was compared to now. Not using sprints, leaving in empty functions and using mostly public variables. Still though, I really like this project.</p>
+       <script>
+let slideIndex = 1;
+showDivs(slideIndex1);
+
+function plusDivs(n) {
+ showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+ let i;
+ let x = document.getElementsByClassName("mySlides");
+ if (n > x.length) {slideIndex = 1}
+ if (n < 1) {slideIndex = x.length}
+ for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+ }
+ x[slideIndex-1].style.display = "block";
+}
+</script>
+     </div>
+
+
+     <!-- Services -->
+ <div class="w3-container" id="Project2" style="margin-top:75px">
+   <h1 class="w3-xxxlarge w3-text-grey"><b>10 Second Windwaker</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+   <p>A project meant to recreate 10 seconds of the Gohdan boss fight from The Legend Of Zelda: Wind Waker. Made with 3 developers and 3 artists.</p>
+   <a href="https://github.com/MLGC00KIE/VerticalSlice2k18-2k19-zelda">Github</a><br></br>
+   <img src="Images/Capture.PNG" style="width:50%" onclick="onClick(this)" alt="Image">
+   <p>There were multiple problems with this project, mainly the fact the developers and artists had very little contact with eachother. Our planning was also very flimsy. As we didn't really work in sprints, rather we just chose a certain part of the game to focus about and stick with that. Despite the many flaws we had, we still managed to create something that work. I myself was really happy with the player movement, which was incredibly difficult to do in 3D. </p>
+</div>
+
+ <!-- Services -->
+ <!-- Services -->
+ <div class="w3-container" id="Project4" style="margin-top:75px">
+   <h1 class="w3-xxxlarge w3-text-grey"><b>Anansi</b></h1>
+   <hr style="width:50px;border:5px solid grey" class="w3-round">
+   <p>A project based of the Anansi myth.</p>
+   <a href="https://github.com/toonschaap/MythGameCode">Github</a><br></br>
+   <img src="Images/anansi.png" style="width:50%" onclick="onClick(this)" alt="Image">
+   <p>The main issue we had with this project was the merging, all of us had basic knowledge of Github. And because of that every merge started putting the files in other folders or double them.
+   </p>
+
+ </div>
+
+ <div class="w3-container" style="margin-top:80px" id="Personal">
+   <h1 class="w3-jumbo"><b>Personal</b></h1>
+   <h1 class="w3-xxxlarge w3-text-grey"><b></b></h1>
+   <hr style="width:250px;border:5px solid grey" class="w3-round">
+ </div>
+
+ <div class="w3-container" id="About" style="margin-top:75px">
+   <h1 class="w3-xxxlarge w3-text-grey"><b>About Me</b></h1>
+   <hr style="width:50px;border:5px solid grey" class="w3-round">
+     <img src="Images\Face.jpg" alt="Face"><br></br>
+   <p>My name is Toon Schaap. Currently I'm following a game development study at MediaCollege. Although, game development isn't the end goal for me. For me, it’s overseeing a game myself, a creative director, if you will. Quite a big goal, I know. So, let  me talk about it a bit more.<br><br>
+     I’ve always wanted to write stories. Ever since I was really young I made up my own stories when playing a game. Over the years this eventually evolved into me making stories without using an already existing franchise. The problem was that I never considered it as a job, just a hobby. What I was more interested jobwise was game development. I didn’t really understand how video games are made, but because I loved the artform, I wanted to find out how and make it my job.  Because of this, I followed the study I’m currently doing, which is game development. <br><br>
+     All my coding experience began here. I think coding is still something very difficult. Most of my knowledge came from C# and using Unity. At first I really didn’t want to ask stuff to teachers or look it up, mainly because I considered it cheating in a weird way. But I’m starting to understand that no developer knows everything from the back of their head. <br><br>
+     I didn’t really get to experience what I ultimately wanted until the Vertical Slice project came around (A project where we needed to work together with game artists to make 10 second of a game.) Before the project I was still considering becoming a developer the end goal. But during this project I really got the chance to overlook and oversee the creative decisions about this game, together with one other artist in our group. And I absolutely loved it. I loved discussing how to make the game interesting from beginning to end with both the developers and artist. I loved discussing the art style and really making the game pop next to other games with the artists. I loved talking with the developers about the mechanics to keep the game fun yet simple. The final project may have had its flaws gameplay wise, but I was very proud of what we made.<br><br>
+     It was this project that made me realize what the end goal really was for me. I started to understand that writing stories and creating worlds, which I considered a hobby, could very much be a thing I could do as a job. Which made me realize that I wanted to focus more on game design. I don’t mind coding, not one bit. In fact when I code something right it usually makes me happy. But I enjoy creating the game concept, thinking about the mechanics and guiding others a whole lot more. <br><br>
+     I know the future isn’t going to be easy, quite the opposite. But I know what I want. And I know that when I want something, I’m going to give it my all to get there.
+   </p>
+
+ </div>
+  <!-- Modal for full size images on click-->
+  <div id="AboutMe" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="Contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-grey"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+        <h2><a href="mailto:toonschaap2@gmail.com">toonschaap2@gmail.com</a></h2><br></br>
+        <h2><a href="https://www.linkedin.com/in/toon-s-0b04b6140/">Linkedin</a></h2><br></br>
+        <h2><a href="CV.docx" download>CV</a></h2>
+      </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"></a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  let captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
